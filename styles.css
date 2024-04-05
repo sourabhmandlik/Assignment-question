@@ -1,0 +1,57 @@
+.customizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.umbrella {
+  width: 200px;
+  height: 200px;
+  background-color: blue; /* Default color */
+  margin-bottom: 20px;
+}
+
+.color-swatches {
+  display: flex;
+  bottom: 181px;
+  right: 207px;
+}
+
+.color-swatch {
+  width: 30px;
+  bottom: 125px;
+  right: 124px;
+  cursor: pointer;
+}
+
+.preview {
+  margin-top: 20px;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.color-swatches {
+  position: fixed;
+  bottom: 181px;
+  right: 207px;
+  display: flex;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+#logo-input {
+  border: 2px solid #ccc;
+  padding: 10px 20px; /* Adjust padding to make it rectangular */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
