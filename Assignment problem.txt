@@ -1,0 +1,25 @@
+function minPlanesToReachLast(airportFuel) {
+    const n = airportFuel.length;
+    let planesNeeded = 0;
+    let currentPosition = 0;
+    let maxReachable = 0;
+
+    while (currentPosition < n - 1) {
+        for (let i = currentPosition; i <= maxReachable; i++) {
+            maxReachable = Math.max(maxReachable, i + airportFuel[i]);
+        }
+
+        if (currentPosition === maxReachable) {
+            return -1;
+        }
+
+        currentPosition = maxReachable;
+        planesNeeded++;
+    }
+
+    return planesNeeded;
+}
+
+// Example usage:
+const airportFuel = [2, 3, 1, 1, 4];
+console.log(minPlanesToReachLast(airportFuel)); // Output: 2
