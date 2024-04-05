@@ -1,4 +1,5 @@
 function minPlanesToReachLast(airportFuel) {
+//declared constants
     const n = airportFuel.length;
     let planesNeeded = 0;
     let currentPosition = 0;
